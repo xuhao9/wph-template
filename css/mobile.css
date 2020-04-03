@@ -1,0 +1,169 @@
+@charset "UTF-8";
+/* ====== 请将以下CSS样式直接复制粘贴到样式表最前面 ====
+*
+*   单位说明：
+*        统一使用rem作为单位，在IPHONE6/7尺寸下(window.width = 375px), 1rem = 100px;
+*        所以，按照设计图尺寸(2倍尺寸,window.width = 750px)切图时, 例如设计图某文本字号大小为32px
+*        那么，css样式应该设置为 font-size: 0.16rem;
+*
+*   盒模型说明：
+*        所有display为block的元素， box-sizing都默认设置为了: border-box;
+*        也就是说明，当某个div的height为1rem时，此时的height是包括了padding和border的高度的；
+*
+*   如果能使用scss文件开发css，就更好了
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -webkit-backface-visibility: hidden;
+    -webkit-overflow-scrolling: touch;
+}
+
+html,
+body {
+    font-family: "Microsoft Yahei","Helvetica","Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #fff;
+    height: 100%;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+p,
+span,
+ul,
+li,
+a,
+strong,
+i {
+    font-family: "PingFangSC-Semibold", "Microsoft Yahei", "Helvetica", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+}
+
+a {
+    text-decoration: none;
+}
+p{
+	margin: 0;
+}
+span{
+	line-height: normal;
+}
+ul,
+ol,
+li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+section,
+div,
+article,
+nav,
+header,
+footer,
+aside,
+input,
+textarea,
+blockquote {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+button,
+.btn,
+.btn:focus,
+.btn:active {
+    outline: none;
+    outline: 0;
+}
+
+@media (max-width: 320px) {
+    html {
+        font-size: 85.33333px;
+    }
+}
+
+@media (min-width: 320px) {
+    html {
+        font-size: 85.33333px;
+    }
+}
+
+@media (min-width: 340px) {
+    html {
+        font-size: 90.66667px;
+    }
+}
+
+@media (min-width: 360px) {
+    html {
+        font-size: 96px;
+    }
+}
+
+@media (min-width: 375px) {
+    html {
+        font-size: 100px;
+    }
+}
+
+@media (min-width: 380px) {
+    html {
+        font-size: 101.33333px;
+    }
+}
+
+@media (min-width: 410px) {
+    html {
+        font-size: 109.33333px;
+    }
+}
+
+@media (min-width: 450px) {
+    html {
+        font-size: 120px;
+    }
+}
+
+body {
+    font-size: 0.16rem;
+}
+.hide{
+    display: none !important;
+}
+
+/*============ RESET_END ==============*/
+
+input[type=button],
+input[type=submit],
+input[type=reset],
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: textfield;
+}
+
+input[type=number] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}

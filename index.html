@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="安装LED显示屏,LED显示屏安装,LED显示屏报价,LED显示屏维修">
+  <meta name="description" content="万屏汇是一家提供LED显示屏报价,LED显示屏安装,LED显示屏维修服务的网站,为全国客户提供上门报价,安装,维修服务">
+  <title>万屏汇-上门安装LED屏,LED显示屏安装,LED显示屏报价,LED显示屏维修</title>
+  <link rel="stylesheet" href="https://current-1254038939.cos.ap-guangzhou.myqcloud.com/css/swiper.min.css">
+  <!-- <link rel="stylesheet" href="./css/mobile.css">
+  <link rel="stylesheet" href="./css/index.css"> -->
+</head>
+<body>
+  <div class="page_box">
+    <div class="header_box">
+      <img class="logo_img" src="./img/logo.png" alt="">
+      <div class="mobile_box">
+        <img src="./img/mobile.png" alt="">
+        <div class="mobile_num"><a href="tel:400-998-0215">400-998-0215</a></div>
+      </div>
+    </div>
+    <div class="banner_box"></div>
+    <div class="offer_box">
+      <div class="offer_bg"></div>
+      <div class="offer_color"></div>
+      <div class="offer_content">
+        <div class="en_title">GET A FREE QUOTE</div>
+        <div class="ch_title">算一算安装LED大屏要花多少钱？</div>
+        <div class="text_item_box">
+          <div class="text_box"><img src="./img/click.png" alt="">一流的LED大屏幕技术</div>
+          <div class="text_box"><img src="./img/click.png" alt="">一流的服务标准</div>
+        </div>
+        <div class="text_item_box">
+          <div class="text_box"><img src="./img/click.png" alt="">一流的LED显示屏产品</div>
+          <div class="text_box"><img src="./img/click.png" alt="">一流的优惠价格</div>
+        </div>
+        <div class="offer_write_box">
+          <img src="img/calculateor.png" alt="" class="count_img">
+          <img src="img/calcu.gif" alt="" class="count_gif">
+          <div class="item_box">
+            <p>使用环境</p>
+            <div id="sence" class="text" onclick="openOptions(event,this)">室内</div>
+            <img class="sanjiao" src="./img/down.png" alt="">
+            <div class="select_box" onclick="chooseOption(event,this)">
+              <ul>
+                <li class="option_item">室内</li>
+                <li class="option_item">户外</li>
+              </ul>
+            </div>
+          </div>
+          <div class="item_box">
+            <p>屏幕类型</p>
+            <div id="screen" class="text" onclick="openOptions(event,this,1)">会议高清屏</div>
+            <img class="sanjiao" src="./img/down.png" alt="">
+            <div class="select_box huwai_select" onclick="chooseOption(event,this)">
+              <ul>
+                <li class="option_item">广告传媒屏</li>
+                <li class="option_item">信息告示屏</li>
+                <li class="option_item">交通信息屏</li>
+                <li class="option_item">门头字幕屏</li>
+                <li class="option_item">透明屏</li>
+                <li class="option_item">其他类型屏</li>
+              </ul>
+            </div>
+            <div class="select_box shinei_select" onclick="chooseOption(event,this)">
+              <ul>
+                <li class="option_item">会议高清屏</li>
+                <li class="option_item">舞台演绎屏</li>
+                <li class="option_item">体育场馆屏</li>
+                <li class="option_item">展厅展览屏</li>
+                <li class="option_item">字幕屏</li>
+                <li class="option_item">透明屏</li>
+                <li class="option_item">其他类型屏</li>
+              </ul>
+            </div>
+          </div>
+          <div class="item_box">
+            <p>观看距离</p>
+            <input id="distance" type="text" placeholder="请输入最近观看距离">
+          </div>
+          <div class="item_box">
+            <p>屏幕面积</p>
+            <input id="area" type="text" placeholder="请输入屏幕面积">
+            <div class="area_unit">㎡</div>
+          </div>
+          <div class="item_box mobile_item_box">
+            <p>您的电话</p>
+            <input id="mobile" type="tel" maxlength="11" placeholder="请输入接收报价手机号码">
+          </div>
+          <div class="item_box">
+            <p>您的称呼</p>
+            <input id="nickname" type="text" placeholder="请输入您的称呼">
+          </div>
+          <div class="offer_btn" onclick="submit()">立即报价</div>
+        </div>
+      </div>
+    </div>
+    <div id="adv_box" class="adv_box">
+      <div class="ch_title">我们的优势</div>
+      <div class="line"></div>
+      <div class="en_title">OUR ADVANTAGE</div>
+      <div class="adv_content">
+        <div class="adv_item">
+          <img src="./img/adv1.png" alt="">
+          <div class="title">品牌厂商正品直供</div>
+          <div class="text">万屏汇涵盖LED显示屏行业各类品牌，品质、价格选择区间广阔</div>
+          <div class="img_box">
+            <img src="./img/adv5.png" alt="">
+          </div>
+        </div>
+        <div class="adv_item">
+          <img src="./img/adv2.png" alt="">
+          <div class="title">全国连锁服务网点</div>
+          <div class="text">各省份均有服务网点，本地上门制作安装，服务有品质，售后有保障</div>
+          <div class="img_box">
+            <img src="./img/adv6.png" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="adv_content">
+        <div class="adv_item">
+          <img src="./img/adv3.png" alt="">
+          <div class="title">报价方案多元化可选择</div>
+          <div class="text">不用再各家对比方案报价，万屏聚集全国5000家认证工程公司，用屏需求一登记，多家方案报价由你选</div>
+          <div class="img_box">
+            <img src="./img/adv7.png" alt="">
+          </div>
+        </div>
+        <div class="adv_item">
+          <img src="./img/adv4.png" alt="">
+          <div class="title">高效服务零收费</div>
+          <div class="text">用屏需求登记后，30分钟内反馈，平台不收取任何费用障</div>
+          <div class="img_box">
+            <img src="./img/adv8.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="case_box" class="case_box">
+      <div class="en_title">OUR CASE</div>
+      <div class="ch_title">近期案例</div>
+      <div class="case_content">
+        <div class="case_swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="item_box">
+                <div class="case_item" onclick="openOfferPop()">
+                  <img class="case_img" src="./img/case1.jpg" alt="">
+                  <div class="case_title">西安管委会会议屏</div>
+                </div>
+              </div>
+              <div class="item_box" onclick="openOfferPop()">
+                <div class="case_item">
+                  <img class="case_img" src="./img/case4.jpg" alt="">
+                  <div class="case_title">重庆观音北桥户外大屏</div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide" onclick="openOfferPop()">
+              <div class="item_box">
+                <div class="case_item">
+                  <img class="case_img" src="./img/case2.jpg" alt="">
+                  <div class="case_title">广州某娱乐厅室内天幕屏</div>
+                </div>
+              </div>
+              <div class="item_box" onclick="openOfferPop()">
+                <div class="case_item">
+                  <img class="case_img" src="./img/case5.jpg" alt="">
+                  <div class="case_title">青岛日照舞台屏</div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide" onclick="openOfferPop()">
+              <div class="item_box">
+                <div class="case_item">
+                  <img class="case_img" src="./img/case3.jpg" alt="">
+                  <div class="case_title">邢台市某一酒店室内屏</div>
+                </div>
+              </div>
+              <div class="item_box" onclick="openOfferPop()">
+                <div class="case_item">
+                  <img class="case_img" src="./img/case6.jpg" alt="">
+                  <div class="case_title">济宁市公安局高新分局</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="case-button-box">
+          <div class="case-button-prev"></div>
+          <div class="case-button-next"></div>
+        </div>
+      </div>
+    </div>
+    <div class="why_box">
+      <div class="ch_title">为什么选择万屏汇</div>
+      <div class="line"></div>
+      <div class="en_title">FEATURED SERVICES</div>
+      <div class="item_box">
+        <img src="./img/why1.png" alt="">
+        <div class="title">上市公司实力加持</div>
+        <div class="text">&nbsp;&nbsp;专业的LED应用产品及解决方案提供商—深圳市洲明科技股份有限公司（sz300232）为产品研发、生产提供最先进的技术支持。</div>
+      </div>
+      <div class="item_box">
+        <img src="./img/why2.png" alt="">
+        <div class="title">行业知名厂商合作</div>
+        <div class="text">&nbsp;&nbsp;与蓝普科技、强力巨彩、华夏光电、高科光电等行业众多知名厂商达成战略合作，在LED显示屏生产、制作安装、维护维保、售后支持形成完美闭环。</div>
+      </div>
+      <div class="item_box">
+        <img src="./img/why3.png" alt="">
+        <div class="title">全国上万家连锁服务网点</div>
+        <div class="text">&nbsp;&nbsp;全国10316家连锁服务网点，遍布每一个城市，真正做到一小时上门场地勘测，设计方案；高效的售后服务，两小时快速解决故障。</div>
+      </div>
+    </div>
+    <!-- <div class="customer_box">
+      <div class="ch_title">服务客户</div>
+      <div class="line"></div>
+      <div class="en_title">OUR CLIENTS</div>
+      <img src="./img/customer.png" alt="">
+    </div> -->
+    <div class="remark_box">
+      <img class="text_img" src="./img/group.png" alt="">
+      <div class="remark_num"><img src="./img/shape.png" alt=""> 粤公网安备 44030502000037号 粤ICP备16014213号-8  </div>
+      <div class="company_name">版权所有：深圳市万屏时代科技有限公司 </div>
+    </div>
+  </div>
+  <!-- 底部悬浮窗 -->
+  <div class="bottom_folat_box">
+    <div class="bottom_folat">
+      <div class="text_box">
+        <div class="text_one">专业装屏报价</div>
+        <div class="text_two">精密大数据计算，3秒极速响应</div>
+      </div>
+      <div class="btn" onclick="openOfferPop()">我要装屏</div>
+    </div>
+  </div>
+  <!-- 报价弹窗 -->
+  <div class="offer_pop_box">
+    <div class="offer_pop_close" onclick="hideOfferPop()"></div>
+    <div class="offer_pop_content">
+        <div class="offer_pop_head">专业客服为您服务，极速响应</div>
+        <p>您的称呼</p>
+        <input id="pop_nickname" type="text" placeholder="请输入您的称呼">
+        <p>您的电话</p>
+        <input id="pop_mobile" type="tel" maxlength="11" placeholder="用于接收报价的手机号码">
+        <div class="pop_btn" onclick="submit(2)">提交</div>
+    </div>
+  </div>
+  <!-- 提交成功 -->
+  <div class="submit-success">
+    <div class="success-content">
+      <div class="content-text">
+        <img src="./img/success.png" alt="">
+        <p>提交成功</p>
+        屏秘书客服将在3分钟内给您回电 免费提供装屏咨询服务
+      </div>
+      <img src="./img/close.png" alt="" class="close" onclick="colse()">
+    </div>
+  </div>
+  <script src="https://current-1254038939.cos.ap-guangzhou.myqcloud.com/js/jquery-2.1.3.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.5/js/swiper.min.js"></script>
+</body>
+</html>
