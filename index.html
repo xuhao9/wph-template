@@ -1,263 +1,541 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="keywords" content="安装LED显示屏,LED显示屏安装,LED显示屏报价,LED显示屏维修">
-  <meta name="description" content="万屏汇是一家提供LED显示屏报价,LED显示屏安装,LED显示屏维修服务的网站,为全国客户提供上门报价,安装,维修服务">
-  <title>万屏汇-上门安装LED屏,LED显示屏安装,LED显示屏报价,LED显示屏维修</title>
-  <link rel="stylesheet" href="https://current-1254038939.cos.ap-guangzhou.myqcloud.com/css/swiper.min.css">
-  <!-- <link rel="stylesheet" href="./css/mobile.css">
-  <link rel="stylesheet" href="./css/index.css"> -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="renderer" content="webkit">
+    <meta name="keywords" content="安装LED显示屏,LED显示屏安装,LED显示屏报价,LED显示屏维修">
+    <meta name="description" content="屏秘书是一家提供LED显示屏报价,LED显示屏安装,LED显示屏维修服务的网站,为全国客户提供上门报价,安装,维修服务">
+    <title>屏秘书-上门安装LED屏,LED显示屏安装,LED显示屏报价,LED显示屏维修</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://current-1254038939.cos.ap-guangzhou.myqcloud.com/css/swiper.min.css">
+    <link rel="stylesheet" href="https://m-1254038939.cos.ap-guangzhou.myqcloud.com/pingmishu/css/index.min.css">
 </head>
+
 <body>
-  <div class="page_box">
-    <div class="header_box">
-      <img class="logo_img" src="./img/logo.png" alt="">
-      <div class="mobile_box">
-        <img src="./img/mobile.png" alt="">
-        <div class="mobile_num"><a href="tel:400-998-0215">400-998-0215</a></div>
-      </div>
+    <!-- loading -->
+    <div class="loading-body" id="loading">
+        <img src="https://m-1254038939.cos.ap-guangzhou.myqcloud.com/pingmishu/img/loading.gif" alt="loading..">
     </div>
-    <div class="banner_box"></div>
-    <div class="offer_box">
-      <div class="offer_bg"></div>
-      <div class="offer_color"></div>
-      <div class="offer_content">
-        <div class="en_title">GET A FREE QUOTE</div>
-        <div class="ch_title">算一算安装LED大屏要花多少钱？</div>
-        <div class="text_item_box">
-          <div class="text_box"><img src="./img/click.png" alt="">一流的LED大屏幕技术</div>
-          <div class="text_box"><img src="./img/click.png" alt="">一流的服务标准</div>
+    <div class="mask"></div>
+    <header id="Head">
+        <span class="logo-img"></span>
+        <div class="head-phone">
+            <span class="mobile"></span>
+            <a class="call_phone" href="tel:400-998-3682">400-998-3682</a>
         </div>
-        <div class="text_item_box">
-          <div class="text_box"><img src="./img/click.png" alt="">一流的LED显示屏产品</div>
-          <div class="text_box"><img src="./img/click.png" alt="">一流的优惠价格</div>
-        </div>
-        <div class="offer_write_box">
-          <img src="img/calculateor.png" alt="" class="count_img">
-          <img src="img/calcu.gif" alt="" class="count_gif">
-          <div class="item_box">
-            <p>使用环境</p>
-            <div id="sence" class="text" onclick="openOptions(event,this)">室内</div>
-            <img class="sanjiao" src="./img/down.png" alt="">
-            <div class="select_box" onclick="chooseOption(event,this)">
-              <ul>
-                <li class="option_item">室内</li>
-                <li class="option_item">户外</li>
-              </ul>
-            </div>
-          </div>
-          <div class="item_box">
-            <p>屏幕类型</p>
-            <div id="screen" class="text" onclick="openOptions(event,this,1)">会议高清屏</div>
-            <img class="sanjiao" src="./img/down.png" alt="">
-            <div class="select_box huwai_select" onclick="chooseOption(event,this)">
-              <ul>
-                <li class="option_item">广告传媒屏</li>
-                <li class="option_item">信息告示屏</li>
-                <li class="option_item">交通信息屏</li>
-                <li class="option_item">门头字幕屏</li>
-                <li class="option_item">透明屏</li>
-                <li class="option_item">其他类型屏</li>
-              </ul>
-            </div>
-            <div class="select_box shinei_select" onclick="chooseOption(event,this)">
-              <ul>
-                <li class="option_item">会议高清屏</li>
-                <li class="option_item">舞台演绎屏</li>
-                <li class="option_item">体育场馆屏</li>
-                <li class="option_item">展厅展览屏</li>
-                <li class="option_item">字幕屏</li>
-                <li class="option_item">透明屏</li>
-                <li class="option_item">其他类型屏</li>
-              </ul>
-            </div>
-          </div>
-          <div class="item_box">
-            <p>观看距离</p>
-            <input id="distance" type="text" placeholder="请输入最近观看距离">
-          </div>
-          <div class="item_box">
-            <p>屏幕面积</p>
-            <input id="area" type="text" placeholder="请输入屏幕面积">
-            <div class="area_unit">㎡</div>
-          </div>
-          <div class="item_box mobile_item_box">
-            <p>您的电话</p>
-            <input id="mobile" type="tel" maxlength="11" placeholder="请输入接收报价手机号码">
-          </div>
-          <div class="item_box">
-            <p>您的称呼</p>
-            <input id="nickname" type="text" placeholder="请输入您的称呼">
-          </div>
-          <div class="offer_btn" onclick="submit()">立即报价</div>
-        </div>
-      </div>
-    </div>
-    <div id="adv_box" class="adv_box">
-      <div class="ch_title">我们的优势</div>
-      <div class="line"></div>
-      <div class="en_title">OUR ADVANTAGE</div>
-      <div class="adv_content">
-        <div class="adv_item">
-          <img src="./img/adv1.png" alt="">
-          <div class="title">品牌厂商正品直供</div>
-          <div class="text">万屏汇涵盖LED显示屏行业各类品牌，品质、价格选择区间广阔</div>
-          <div class="img_box">
-            <img src="./img/adv5.png" alt="">
-          </div>
-        </div>
-        <div class="adv_item">
-          <img src="./img/adv2.png" alt="">
-          <div class="title">全国连锁服务网点</div>
-          <div class="text">各省份均有服务网点，本地上门制作安装，服务有品质，售后有保障</div>
-          <div class="img_box">
-            <img src="./img/adv6.png" alt="">
-          </div>
-        </div>
-      </div>
-      <div class="adv_content">
-        <div class="adv_item">
-          <img src="./img/adv3.png" alt="">
-          <div class="title">报价方案多元化可选择</div>
-          <div class="text">不用再各家对比方案报价，万屏聚集全国5000家认证工程公司，用屏需求一登记，多家方案报价由你选</div>
-          <div class="img_box">
-            <img src="./img/adv7.png" alt="">
-          </div>
-        </div>
-        <div class="adv_item">
-          <img src="./img/adv4.png" alt="">
-          <div class="title">高效服务零收费</div>
-          <div class="text">用屏需求登记后，30分钟内反馈，平台不收取任何费用障</div>
-          <div class="img_box">
-            <img src="./img/adv8.png" alt="">
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="case_box" class="case_box">
-      <div class="en_title">OUR CASE</div>
-      <div class="ch_title">近期案例</div>
-      <div class="case_content">
-        <div class="case_swiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="item_box">
-                <div class="case_item" onclick="openOfferPop()">
-                  <img class="case_img" src="./img/case1.jpg" alt="">
-                  <div class="case_title">西安管委会会议屏</div>
+    </header>
+    <section id="slogan">
+        <div class="banner-container swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="https://m-1254038939.cos.ap-guangzhou.myqcloud.com/pingmishu/img/banner4.jpg">
                 </div>
-              </div>
-              <div class="item_box" onclick="openOfferPop()">
-                <div class="case_item">
-                  <img class="case_img" src="./img/case4.jpg" alt="">
-                  <div class="case_title">重庆观音北桥户外大屏</div>
+                <div class="swiper-slide">
+                    <img class="lazy"
+                        data-src="https://m-1254038939.cos.ap-guangzhou.myqcloud.com/pingmishu/img/banner2.jpg">
                 </div>
-              </div>
+                <div class="swiper-slide">
+                    <img class="lazy"
+                        data-src="https://m-1254038939.cos.ap-guangzhou.myqcloud.com/pingmishu/img/banner3.jpg">
+                </div>
             </div>
-            <div class="swiper-slide" onclick="openOfferPop()">
-              <div class="item_box">
-                <div class="case_item">
-                  <img class="case_img" src="./img/case2.jpg" alt="">
-                  <div class="case_title">广州某娱乐厅室内天幕屏</div>
-                </div>
-              </div>
-              <div class="item_box" onclick="openOfferPop()">
-                <div class="case_item">
-                  <img class="case_img" src="./img/case5.jpg" alt="">
-                  <div class="case_title">青岛日照舞台屏</div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide" onclick="openOfferPop()">
-              <div class="item_box">
-                <div class="case_item">
-                  <img class="case_img" src="./img/case3.jpg" alt="">
-                  <div class="case_title">邢台市某一酒店室内屏</div>
-                </div>
-              </div>
-              <div class="item_box" onclick="openOfferPop()">
-                <div class="case_item">
-                  <img class="case_img" src="./img/case6.jpg" alt="">
-                  <div class="case_title">济宁市公安局高新分局</div>
-                </div>
-              </div>
-            </div>
-          </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
         </div>
-        <div class="case-button-box">
-          <div class="case-button-prev"></div>
-          <div class="case-button-next"></div>
+    </section>
+    <!-- led量身定制大屏 -->
+    <section class="section-led-customized">
+        <div class="section-container">
+            <div class="h2-title">
+                <h3>CUSTOM-TAILOR</h3>
+                <h2> led大屏量身定制</h2>
+            </div>
+            <div class="section-led-text">指挥中心高清大屏</div>
+            <div class="swiper-container-customized">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="bg-img">
+                            <img src="https://m-1254038939.cos.ap-guangzhou.myqcloud.com/pingmishu/img/1.jpg">
+                            <!-- <h3>指挥中心高清大屏</h3> -->
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="bg-img">
+                            <img class="lazy"
+                                data-src="https://m-1254038939.cos.ap-guangzhou.myqcloud.com/pingmishu/img/2.jpg">
+                            <!-- <h3>安防监控高清大屏</h3> -->
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="bg-img">
+                            <img class="lazy"
+                                data-src="https://m-1254038939.cos.ap-guangzhou.myqcloud.com/pingmishu/img/3.jpg">
+                            <!-- <h3>会议室高清大屏</h3> -->
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="bg-img">
+                            <img class="lazy"
+                                data-src="https://m-1254038939.cos.ap-guangzhou.myqcloud.com/pingmishu/img/4.jpg">
+                            <!-- <h3>户外商业显示大屏</h3> -->
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="bg-img">
+                            <img class="lazy"
+                                data-src="https://m-1254038939.cos.ap-guangzhou.myqcloud.com/pingmishu/img/5.jpg">
+                            <!-- <h3>室内显示大屏</h3> -->
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="bg-img">
+                            <img class="lazy"
+                                data-src="https://m-1254038939.cos.ap-guangzhou.myqcloud.com/pingmishu/img/6.jpg">
+                            <!-- <h3>门头字幕滚动屏</h3> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="customized-button-prev"></div>
+                <div class="customized-button-next"></div>
+            </div>
         </div>
-      </div>
+    </section>
+    <section id="inquiry">
+        <div class="bg-img lazy-bgi"
+            data-bgi="https://m-1254038939.cos.ap-guangzhou.myqcloud.com/pingmishu/img/baojia.png"></div>
+        <div class="bg-color"></div>
+        <div class="title_box">
+            <div class="en_title">get a free quote</div>
+            <div class="ch_title">算一算安装LED大屏要多少钱</div>
+        </div>
+        <div class="count-panel">
+            <div class="input-item">
+                <label>使用环境</label>
+                <div class="choose-pane">
+                    <div id="scene" class="type-v value-div" data-val="2" onclick="openOptions(event,this)">请选择</div>
+                    <div class="options" onclick="chooseOption(event,this)">
+                        <p class="option-item" data-type="2">户外</p>
+                        <p class="option-item" data-type="1">室内</p>
+                    </div>
+                </div>
+            </div>
+            <div class="input-item">
+                <label>屏幕面积</label>
+                <div class="choose-pane">
+                    <input class="span-v value-div" type="number" placeholder="宽  ×  高" value="" />
+                    <span class="m2">㎡</span>
+                </div>
+            </div>
+            <div class="input-item">
+                <label>使用场景</label>
+                <div class="choose-pane">
+                    <div id="screenType" class="type-v value-div" data-val="2" onclick="openOptions(event,this,1)">商业广告屏
+                    </div>
+                    <div id="huwai-options" class="options" onclick="chooseOption(event,this)">
+                        <p class="option-item" data-type="2">广告传媒屏</p>
+                        <p class="option-item" data-type="3">信息告示屏</p>
+                        <p class="option-item" data-type="5">交通信息屏</p>
+                        <p class="option-item" data-type="4">门头字幕屏</p>
+                        <p class="option-item" data-type="1">透明屏</p>
+                        <p class="option-item" data-type="6">其他类型屏</p>
+                    </div>
+                    <div id="shinei-options" class="options" onclick="chooseOption(event,this)">
+                        <p class="option-item" data-type="2">会议高清屏</p>
+                        <p class="option-item" data-type="3">舞台演绎屏</p>
+                        <p class="option-item" data-type="5">体育场馆屏</p>
+                        <p class="option-item" data-type="4">展厅展览屏</p>
+                        <p class="option-item" data-type="1">字幕屏</p>
+                        <p class="option-item" data-type="6">透明屏</p>
+                        <p class="option-item" data-type="7">其他类型屏</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="input-item">
+                <label>观看距离</label>
+                <div class="choose-pane">
+                    <input id="distance" class="span-v value-div" type="number" placeholder="请输入最近观看距离" value="" />
+                    <span class="m2">m</span>
+                </div>
+            </div>
+
+            <div class="input-item">
+                <label>您的称呼</label>
+                <div class="choose-pane">
+                    <input class="value-div" type="number" maxlength="11" placeholder="请输入您的称呼" />
+                </div>
+            </div>
+            <div class="input-item">
+                <label>手机号码</label>
+                <div class="choose-pane">
+                    <input id="phone" class="value-div" type="number" maxlength="11" placeholder="请输入接收报价手机号码" />
+                    <p class="errorTip" onclick="removeSelf(event,this)">手机号不能为空</p>
+                </div>
+            </div>
+            <button class="btn submit" id="submit" onclick="submit(1)">开始计算</button>
+        </div>
+    </section>
+
+    <!-- 选择屏秘书的理由 -->
+    <section id="pingmushu-reason">
+        <div class="title">
+            <h3>ADVANTAGE</h3>
+            <h2>选择屏秘书的理由</h2>
+        </div>
+        <ul class="item-reason">
+            <li>
+                <img class="lazy"
+                    data-src="https://m-1254038939.cos.ap-guangzhou.myqcloud.com/pingmishu/img/shangshigoongsi.png"
+                    alt="">
+                <h3>上市公司实力加持</h3>
+                <p>专业的LED应用产品及解决方案提供商—深圳市洲明科技股份有限公司（sz300232）为产品研发、生产提供最先进的技术支持。</p>
+            </li>
+            <li>
+                <img class="lazy"
+                    data-src="https://m-1254038939.cos.ap-guangzhou.myqcloud.com/pingmishu/img/hangyezhiming.png"
+                    alt="">
+                <h3>行业知名厂商合作</h3>
+                <p>与蓝普科技、强力巨彩、华夏光电、高科光电等行业众多知名厂商达成战略合作，在LED显示屏生产、制作安装、维护维保、售后支持形成完美闭环。</p>
+            </li>
+            <li>
+                <img class="lazy"
+                    data-src="https://m-1254038939.cos.ap-guangzhou.myqcloud.com/pingmishu/img/fuwuwangdian.png" alt="">
+                <h3>全国上万连锁服务网点</h3>
+                <p>全国10316家连锁服务网点，遍布每一个城市，真正做到一小时上门场地勘测，设计方案；高效的售后服务，两小时快速解决故障。</p>
+            </li>
+        </ul>
+    </section>
+
+    <!-- 精选厂商 -->
+    <section id="awesomeCompany" class="lazy-bgi"
+        data-bgi='https://m-1254038939.cos.ap-guangzhou.myqcloud.com/pingmishu/img/anli.jpg'>
+        <h3 class="title-english">OUR CASES</h3>
+        <h3 class="title-chinese">装屏案例</h3>
+        <div class="swiper-container-company">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" data-hash="slide1case">
+                    <ul class="anli-img-box">
+                        <li>
+                            <img class="lazy"
+                                data-src="https://m-1254038939.cos.ap-guangzhou.myqcloud.com/pingmishu/img/anli1.jpg"
+                                alt="">
+                            <p>青岛公司会议室高清屏</p>
+                        </li>
+                        <li>
+                            <img class="lazy"
+                                data-src="https://m-1254038939.cos.ap-guangzhou.myqcloud.com/pingmishu/img/anli2.jpg"
+                                alt="">
+                            <p>潍坊商场户外商业屏</p>
+                        </li>
+                        <li>
+                            <img class="lazy"
+                                data-src="https://m-1254038939.cos.ap-guangzhou.myqcloud.com/pingmishu/img/anli3.jpg"
+                                alt="">
+                            <p>都江堰安防监控屏</p>
+                        </li>
+                        <li>
+                            <img class="lazy"
+                                data-src="https://m-1254038939.cos.ap-guangzhou.myqcloud.com/pingmishu/img/anli4.jpg"
+                                alt="">
+                            <p>杭州室内高清屏</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="swiper-slide" data-hash="slide1case">
+                    <ul class="anli-img-box">
+                        <li>
+                            <img class="lazy"
+                                data-src="https://m-1254038939.cos.ap-guangzhou.myqcloud.com/pingmishu/img/anli5.jpg"
+                                alt="">
+                            <p>成都菁蓉中心室内高清屏</p>
+                        </li>
+                        <li>
+                            <img class="lazy"
+                                data-src="https://m-1254038939.cos.ap-guangzhou.myqcloud.com/pingmishu/img/anli6.jpg"
+                                alt="">
+                            <p>深圳商场商业显示屏</p>
+                        </li>
+                        <li>
+                            <img class="lazy"
+                                data-src="https://m-1254038939.cos.ap-guangzhou.myqcloud.com/pingmishu/img/anli7.jpg"
+                                alt="">
+                            <p>北京指挥中心高清屏</p>
+                        </li>
+                        <li>
+                            <img class="lazy"
+                                data-src="https://m-1254038939.cos.ap-guangzhou.myqcloud.com/pingmishu/img/anli8.jpg"
+                                alt="">
+                            <p>广州酒店舞台背景屏</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="company-button-prev"></div>
+            <div class="company-button-next"></div>
+        </div>
+    </section>
+
+    <section class="offer_box" style="margin: 0 auto;">
+        <div class="input-item">
+            <label>使用环境</label>
+            <div class="choose-pane">
+                <div id="scene2" class="type-v value-div" data-val="2" onclick="openOptions(event,this)">请选择</div>
+                <div class="options" onclick="chooseOption(event,this,2)">
+                    <p class="option-item" data-type="2">户外</p>
+                    <p class="option-item" data-type="1">室内</p>
+                </div>
+            </div>
+        </div>
+        <div class="input-item">
+            <label>屏幕面积</label>
+            <div class="choose-pane">
+                <input class="span-v value-div" type="number" placeholder="宽  ×  高" value="" />
+                <span class="m2">㎡</span>
+            </div>
+        </div>
+        <div class="input-item">
+            <label>使用场景</label>
+            <div class="choose-pane">
+                <div id="screenType2" class="type-v value-div" data-val="2" onclick="openOptions(event,this,2)">商业广告屏
+                </div>
+                <div id="huwai-options2" class="options" onclick="chooseOption(event,this,2)">
+                    <p class="option-item" data-type="2">广告传媒屏</p>
+                    <p class="option-item" data-type="3">信息告示屏</p>
+                    <p class="option-item" data-type="5">交通信息屏</p>
+                    <p class="option-item" data-type="4">门头字幕屏</p>
+                    <p class="option-item" data-type="1">透明屏</p>
+                    <p class="option-item" data-type="6">其他类型屏</p>
+                </div>
+                <div id="shinei-options2" class="options" onclick="chooseOption(event,this,2)">
+                    <p class="option-item" data-type="2">会议高清屏</p>
+                    <p class="option-item" data-type="3">舞台演绎屏</p>
+                    <p class="option-item" data-type="5">体育场馆屏</p>
+                    <p class="option-item" data-type="4">展厅展览屏</p>
+                    <p class="option-item" data-type="1">字幕屏</p>
+                    <p class="option-item" data-type="6">透明屏</p>
+                    <p class="option-item" data-type="7">其他类型屏</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="input-item">
+            <label>观看距离</label>
+            <div class="choose-pane">
+                <input class="span-v value-div" type="number" placeholder="请输入最近观看距离" value="" />
+                <span class="m2">m</span>
+            </div>
+        </div>
+
+        <div class="input-item">
+            <label>您的称呼</label>
+            <div class="choose-pane">
+                <input class="value-div" type="number" maxlength="11" placeholder="请输入您的称呼" />
+            </div>
+        </div>
+        <div class="input-item">
+            <label>手机号码</label>
+            <div class="choose-pane">
+                <input id="phone2" class="value-div" type="number" maxlength="11" placeholder="请输入接收报价手机号码" />
+                <p class="errorTip" onclick="removeSelf(event,this)">手机号不能为空</p>
+            </div>
+        </div>
+        <button class="btn submit" onclick="submit(2)">开始计算</button>
+    </section>
+
+    <section id="partner">
+        <div class="title">
+            <h3>OUR CLIENTS</h3>
+            <h2>部分服务客户</h2>
+        </div>
+        <img class="img-pane lazy"
+            data-src="https://m-1254038939.cos.ap-guangzhou.myqcloud.com/pingmishu/img/hezuohuoban.png" alt="">
+    </section>
+    <!-- 底部部分，footer -->
+    <footer>
+        <div id="footer">
+            <div class="container">
+                <div class="slogan">
+                    <div>让用屏变得更轻松</div>
+                </div>
+                <div class="keep-on-record">
+                    <span class="keep-on-record-img"></span>
+                    京ICP备09112544号-14
+                </div>
+                <p class="copyright">版权所有：北京喜淘聚源科技有限公司 </p>
+            </div>
+        </div>
+    </footer>
+    <!-- 悬浮的报价按钮 -->
+    <div class="btn_bottom">
+        <a class="btn_right" onclick="showInquiryModal()">
+            免费报价
+        </a>
+        <a class="call_phone" href="tel:4009983682" class="btn_left">
+            电话咨询
+        </a>
+
     </div>
-    <div class="why_box">
-      <div class="ch_title">为什么选择万屏汇</div>
-      <div class="line"></div>
-      <div class="en_title">FEATURED SERVICES</div>
-      <div class="item_box">
-        <img src="./img/why1.png" alt="">
-        <div class="title">上市公司实力加持</div>
-        <div class="text">&nbsp;&nbsp;专业的LED应用产品及解决方案提供商—深圳市洲明科技股份有限公司（sz300232）为产品研发、生产提供最先进的技术支持。</div>
-      </div>
-      <div class="item_box">
-        <img src="./img/why2.png" alt="">
-        <div class="title">行业知名厂商合作</div>
-        <div class="text">&nbsp;&nbsp;与蓝普科技、强力巨彩、华夏光电、高科光电等行业众多知名厂商达成战略合作，在LED显示屏生产、制作安装、维护维保、售后支持形成完美闭环。</div>
-      </div>
-      <div class="item_box">
-        <img src="./img/why3.png" alt="">
-        <div class="title">全国上万家连锁服务网点</div>
-        <div class="text">&nbsp;&nbsp;全国10316家连锁服务网点，遍布每一个城市，真正做到一小时上门场地勘测，设计方案；高效的售后服务，两小时快速解决故障。</div>
-      </div>
+
+    <!-- 报价弹窗 -->
+    <div id="inquiryModal" onclick="hideSelf(this,event)">
+        <div class="content">
+            <div class="close-btn" onclick="closeModal()">
+                <span class="close-ico"></span>
+            </div>
+            <a class="tel call_phone" href="tel:400-998-3682">400-998-3682</a>
+            <p class="slogan">3秒登记，立即召唤供应商报价</p>
+            <p class="location">
+                <img class="lazy"
+                    data-src="https://m-1254038939.cos.ap-guangzhou.myqcloud.com/pingmishu/img/location.png">
+                <span class="citySelect" onclick="openCitySelect()">广州市</span>
+            </p>
+            <input class="inq-mobile" type="number" placeholder="请输入手机号码">
+            <p class="error-inq">请输入正确的手机号</p>
+            <button class="submit-inq" onclick="submit(3)">免费报价</button>
+        </div>
     </div>
-    <!-- <div class="customer_box">
-      <div class="ch_title">服务客户</div>
-      <div class="line"></div>
-      <div class="en_title">OUR CLIENTS</div>
-      <img src="./img/customer.png" alt="">
-    </div> -->
-    <div class="remark_box">
-      <img class="text_img" src="./img/group.png" alt="">
-      <div class="remark_num"><img src="./img/shape.png" alt=""> 粤公网安备 44030502000037号 粤ICP备16014213号-8  </div>
-      <div class="company_name">版权所有：深圳市万屏时代科技有限公司 </div>
+    <!-- 城市选择的page -->
+    <div id="CitySelector">
+        <div class="container" onclick="selected(event,this)">
+            <img class="lazy closeBtn"
+                data-src="https://m-1254038939.cos.ap-guangzhou.myqcloud.com/pingmishu/img/icon-close.png"
+                onclick="closeCityPanel()">
+            <h1>选择安装城市</h1>
+            <div class="city-current" id="CitySelector-current">
+                <span class="words">定位城市</span>
+                <div class="city-button" data-city="深圳市"><span class="icon-location-pcs"></span>深圳市</div>
+            </div>
+            <div class="city-hots" id="CitySelector-hots">
+                <span class="words">热门城市</span>
+                <div class="line-1">
+
+                </div>
+            </div>
+            <div class="city-all">
+
+            </div>
+        </div>
+        <!--右侧浮层-->
+        <div class="nav-bar">
+            <a href="#CitySelector-current">定位</a><a href="#CitySelector-hots">热门</a>
+        </div>
     </div>
-  </div>
-  <!-- 底部悬浮窗 -->
-  <div class="bottom_folat_box">
-    <div class="bottom_folat">
-      <div class="text_box">
-        <div class="text_one">专业装屏报价</div>
-        <div class="text_two">精密大数据计算，3秒极速响应</div>
-      </div>
-      <div class="btn" onclick="openOfferPop()">我要装屏</div>
+
+    <!-- 提交成功 -->
+    <div id="submitSuccess" class="submit-success" onclick="closeSuccessPanel()">
+        <div class="success-content">
+            <div class="content-text">
+                <span class="success-ico"></span>
+                <p>提交成功</p>
+                屏秘书客服将在3分钟内给您回电 免费提供装屏咨询服务
+            </div>
+        </div>
     </div>
-  </div>
-  <!-- 报价弹窗 -->
-  <div class="offer_pop_box">
-    <div class="offer_pop_close" onclick="hideOfferPop()"></div>
-    <div class="offer_pop_content">
-        <div class="offer_pop_head">专业客服为您服务，极速响应</div>
-        <p>您的称呼</p>
-        <input id="pop_nickname" type="text" placeholder="请输入您的称呼">
-        <p>您的电话</p>
-        <input id="pop_mobile" type="tel" maxlength="11" placeholder="用于接收报价的手机号码">
-        <div class="pop_btn" onclick="submit(2)">提交</div>
-    </div>
-  </div>
-  <!-- 提交成功 -->
-  <div class="submit-success">
-    <div class="success-content">
-      <div class="content-text">
-        <img src="./img/success.png" alt="">
-        <p>提交成功</p>
-        屏秘书客服将在3分钟内给您回电 免费提供装屏咨询服务
-      </div>
-      <img src="./img/close.png" alt="" class="close" onclick="colse()">
-    </div>
-  </div>
-  <script src="https://current-1254038939.cos.ap-guangzhou.myqcloud.com/js/jquery-2.1.3.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.5/js/swiper.min.js"></script>
+    <script src="https://current-1254038939.cos.ap-guangzhou.myqcloud.com/js/jquery-2.1.3.min.js"></script>
+    <script src="https://current-1254038939.cos.ap-guangzhou.myqcloud.com/js/swiper.min.js"> </script>
+    <!--js解析url参数-->
+    <script src="https://m-1254038939.cos.ap-guangzhou.myqcloud.com/pingmishu/js/index.min.js"></script>
+    <script>
+        // loading消失函数
+        $(document).ready(function () {
+            $(window).load(function () {
+                $("#loading").hide();
+            });
+        });
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?7ac147377b49e8e16bcd0622c15fca81";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+    <!--百度统计埋点-->
+    <script type="text/javascript">
+        window._agl = window._agl || [];
+        (function () {
+            _agl.push(
+                ['production', '_f7L2XwGXjyszb4d1e2oxPybgD']
+            );
+            (function () {
+                var agl = document.createElement('script');
+                agl.type = 'text/javascript';
+                agl.async = true;
+                agl.src = 'https://fxgate.baidu.com/angelia/fcagl.js?production=_f7L2XwGXjyszb4d1e2oxPybgD';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(agl, s);
+            })();
+        })();
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('.call_phone').attr("href", "tel:400-998-3682")
+        })
+        // 图片懒加载
+        document.addEventListener("DOMContentLoaded", function () {
+            var lazyloadImages = document.querySelectorAll("img.lazy");
+            var lazyloadThrottleTimeout;
+
+            function lazyload() {
+                if (lazyloadThrottleTimeout) {
+                    clearTimeout(lazyloadThrottleTimeout);
+                }
+
+                lazyloadThrottleTimeout = setTimeout(function () {
+                    var scrollTop = window.pageYOffset;
+                    lazyloadImages.forEach(function (img) {
+                        if (img.offsetTop <= (window.innerHeight + scrollTop)) {
+                            img.src = img.dataset.src;
+                            img.classList.remove('lazy');
+                        }
+                    });
+                    if (lazyloadImages.length == 0) {
+                        document.removeEventListener("scroll", lazyload);
+                        window.removeEventListener("resize", lazyload);
+                        window.removeEventListener("orientationChange", lazyload);
+                    }
+                }, 20);
+            }
+
+            document.addEventListener("scroll", lazyload);
+            window.addEventListener("resize", lazyload);
+            window.addEventListener("orientationChange", lazyload);
+        });
+        // 背景图懒加载
+        document.addEventListener("DOMContentLoaded", function () {
+            var lazyloadImages = document.querySelectorAll(".lazy-bgi");
+            var lazyloadThrottleTimeout;
+
+            function lazyload() {
+                if (lazyloadThrottleTimeout) {
+                    clearTimeout(lazyloadThrottleTimeout);
+                }
+
+                lazyloadThrottleTimeout = setTimeout(function () {
+                    var scrollTop = window.pageYOffset;
+                    lazyloadImages.forEach(function (item) {
+                        if (item.offsetTop <= (window.innerHeight + scrollTop)) {
+                            item.style.backgroundImage = "url(" + item.dataset.bgi + ")";
+                            item.classList.remove('lazy-bgi');
+                        }
+                    });
+                    if (lazyloadImages.length == 0) {
+                        document.removeEventListener("scroll", lazyload);
+                        window.removeEventListener("resize", lazyload);
+                        window.removeEventListener("orientationChange", lazyload);
+                    }
+                }, 20);
+            }
+
+            document.addEventListener("scroll", lazyload);
+            window.addEventListener("resize", lazyload);
+            window.addEventListener("orientationChange", lazyload);
+        });
+    </script>
 </body>
+
 </html>

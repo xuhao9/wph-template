@@ -8,7 +8,7 @@ module.exports = {
     entry: './js/index.js',
     output: {
         filename: 'bundle.js',
-        path: path.resolve(__dirname, 'dist')
+        path: path.resolve(__dirname, 'dist/js')
     },
     devtool: 'inline-source-map',
     module: {
@@ -22,10 +22,12 @@ module.exports = {
           },
           {
             test: /\.(png|svg|jpg|gif)$/,
-            use: ['file-loader'],
-            options: {
-                name: './images/[name].[ext]'
-            }
+            use: [{
+                loader: 'file-loader',
+                query: {
+                    name: './images/[name].[ext]'
+                }
+            }]
           },
           {
             test: /\.(woff|woff2|eot|ttf|otf)$/,

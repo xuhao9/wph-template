@@ -1,5 +1,5 @@
 var globalData;
-window["globalData"] = globalData = {};
+ window["globalData"] = globalData = {};
 
 var doc_reffer = document.referrer.split("?")[1];
 try {

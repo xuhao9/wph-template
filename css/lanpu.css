@@ -1,0 +1,802 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -webkit-backface-visibility: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
+html,
+body {
+  font-family: "Microsoft Yahei", "Helvetica", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #fff;
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+p,
+span,
+ul,
+li,
+a,
+strong,
+i {
+  font-family: "Microsoft Yahei", "Helvetica", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 100;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+section,
+div,
+article,
+nav,
+header,
+footer,
+aside {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+button,
+.btn,
+.btn:focus,
+.btn:active {
+  outline: none;
+  outline: 0;
+}
+
+@media (max-width: 320px) {
+  html {
+    font-size: 85.33333px;
+  }
+}
+
+@media (min-width: 320px) {
+  html {
+    font-size: 85.33333px;
+  }
+}
+
+@media (min-width: 340px) {
+  html {
+    font-size: 90.66667px;
+  }
+}
+
+@media (min-width: 360px) {
+  html {
+    font-size: 96px;
+  }
+}
+
+@media (min-width: 375px) {
+  html {
+    font-size: 100px;
+  }
+}
+
+@media (min-width: 380px) {
+  html {
+    font-size: 101.33333px;
+  }
+}
+
+@media (min-width: 410px) {
+  html {
+    font-size: 109.33333px;
+  }
+}
+
+@media (min-width: 450px) {
+  html {
+    font-size: 120px;
+  }
+}
+
+/*============ RESET_END ==============*/
+body {
+  font-size: .16rem;
+  height: auto;
+}
+
+.main-color {
+  color: #1AC6A0;
+}
+
+.col-6 {
+  width: 50%;
+  float: left;
+  position: relative;
+  padding: 0 .25rem;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.hide {
+  display: none !important;
+}
+
+
+
+#slogan {
+  height: 3.1rem;
+  margin-top: .5rem;
+}
+
+#slogan .swiper-container {
+  height: 100%;
+}
+
+#slogan .swiper-container img {
+  width: 100%;
+  height: 3.1rem;
+}
+
+
+#inquiry .count-panel {
+  position: absolute;
+  top: 1.13rem;
+  left: 50%;
+  transform: translate(-50%);
+  width: 3.61rem;
+  height: 4.5rem;
+  padding: 0.2rem 0.08rem;
+  background: rgba(255, 255, 255, 1);
+}
+
+#inquiry .count-panel h4 {
+  font-size: .18rem;
+  line-height: .18rem;
+  color: #4A4A4A;
+  margin: 0 0 .17rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+#inquiry .count-panel h4 .main-color {
+  font-weight: bold;
+}
+
+#inquiry .count-panel .today-count {
+  font-size: .14rem;
+  color: #2BDAB3;
+  line-height: .14rem;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: .27rem;
+}
+
+#inquiry .count-panel .today-count span {
+  font-weight: bold;
+}
+
+#inquiry .input-item {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 3.45rem;
+  height: 0.39rem;
+  padding-left: 0.24rem;
+  margin-bottom: 0.16rem;
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0rem 0rem 0.08rem 0rem rgba(0, 0, 0, 0.08);
+  border-radius: 0.2rem;
+  border: 0rem solid rgba(243, 243, 243, 1);
+}
+
+#inquiry .input-item:last-child {
+  margin-bottom: 0.2rem;
+}
+
+#inquiry .input-item label {
+  position: relative;
+  font-size: 0.13rem;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: rgba(51, 51, 51, 1);
+  line-height: 0.13rem;
+  margin-right: 0.24rem;
+}
+
+#inquiry .input-item label::after {
+  content: "";
+  position: absolute;
+  right: -0.13rem;
+  top: -0.02rem;
+  width: 1px;
+  height: 0.19rem;
+  background-color: #979797FF;
+}
+
+#inquiry .input-item .choose-pane {
+  flex: 1;
+  height: 0.28rem;
+  position: relative;
+}
+
+#inquiry .input-item .value-div {
+  width: 100%;
+  height: 0.28rem;
+  border: 0;
+  padding: 0 .15rem;
+  line-height: .26rem;
+  outline: none;
+  box-shadow: none;
+  -webkit-appearance: none;
+  box-sizing: border-box;
+
+  font-size: 0.13rem;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: rgba(153, 153, 153, 1);
+}
+
+
+#inquiry .input-item .value-div-half {
+  box-sizing: border-box;
+  width: 45%;
+  margin-right: 8%;
+  height: 0.28rem;
+  border-radius: 4px;
+  border: solid 1px #e4e4e4;
+  padding: 0 .15rem;
+  line-height: .26rem;
+  outline: none;
+  box-shadow: none;
+  -webkit-appearance: none;
+}
+
+#inquiry .input-item .value-div-half:last-of-type {
+  margin-right: 0;
+}
+
+#inquiry .input-item .rotate {
+  transform: rotate(180deg);
+}
+
+#inquiry .choose-pane .options {
+  position: absolute;
+  width: 100%;
+  border: 1px solid #e4e4e4;
+  border-top: 0;
+  top: .25rem;
+  padding: .1rem 0 0;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  z-index: 2;
+  overflow: hidden;
+  display: none;
+  background: #fff;
+}
+
+#inquiry .choose-pane .errorTip {
+  position: absolute;
+  height: .24rem;
+  width: 85%;
+  left: .16rem;
+  top: .01rem;
+  background-color: #fff;
+  line-height: .24rem;
+  color: red;
+  font-size: .14rem;
+  display: none;
+}
+
+#inquiry .choose-pane .options .option-item {
+  padding: 0 .15rem .1rem;
+  background-color: #fff;
+  margin: 0;
+  font-size: 0.13rem;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: rgba(153, 153, 153, 1);
+  line-height: 0.13rem;
+}
+
+#inquiry .choose-pane .m1,
+#inquiry .choose-pane .m2 {
+  position: absolute;
+  top: .05rem;
+  left: 35%;
+  font-size: .13rem;
+  color: #9b9b9b;
+}
+
+#inquiry .choose-pane .m2 {
+  left: 88%;
+}
+
+#inquiry .tips {
+  font-size: .1rem;
+  text-align: center;
+  margin-top: .1rem;
+  color: #9B9B9B;
+  line-height: .15rem;
+}
+
+#inquiry #submit,
+#inquiry #submit:focus {
+  display: block;
+  margin: 0 auto;
+  border: none;
+  box-shadow: none;
+  width: 2.26rem;
+  height: 0.4rem;
+  background: rgba(255, 164, 5, 1);
+  font-size: 0.14rem;
+  font-family: PingFangSC-Medium, PingFang SC;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 1);
+  line-height: 0.4rem;
+}
+
+#inquiry .errorTip {
+  position: absolute;
+  text-align: left;
+  color: red;
+  font-size: .12rem;
+  display: none;
+  height: .24rem;
+  top: 1px;
+  line-height: .24rem;
+}
+
+/* 悬浮的报价按钮 */
+.btn_bottom {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  z-index: 99;
+  width: 100%;
+  height: 0.55rem;
+  padding: 0.08rem 0.1rem;
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0rem -0.01rem 0.05rem 0rem rgba(0, 0, 0, 0.07);
+  border: 0.01rem solid rgba(232, 232, 232, 1);
+  /* display: none; */
+
+}
+
+.btn_bottom a {
+  font-size: 0.16rem;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  line-height: 0.4rem;
+  text-align: center;
+}
+
+.btn_bottom .call_phone {
+  flex: 1;
+  height: 0.4rem;
+  background: rgba(255, 164, 5, 0.06);
+  border-radius: 0rem 0.01rem 0.01rem 0rem;
+  border: 0.01rem solid rgba(255, 164, 5, 1);
+  color: rgba(255, 164, 5, 1);
+}
+
+
+.btn_bottom .btn_right {
+  flex: 1;
+  height: 0.4rem;
+  margin-right: 0.02rem;
+  background: rgba(255, 164, 5, 1);
+  border-radius: 0.01rem 0rem 0rem 0.01rem;
+  color: rgba(255, 255, 255, 1);
+}
+
+#inquiryModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 12;
+  display: none;
+}
+
+/* 报价弹窗 */
+#inquiryModal .content {
+  width: 80%;
+  height: 3rem;
+  position: absolute;
+  left: 10%;
+  top: 50%;
+  margin-top: -1.5rem;
+  background: url("https://m-1254038939.cos.ap-guangzhou.myqcloud.com/pingmishu/img/modal-bg.png") 0 0 no-repeat;
+  background-size: 100% 100%;
+  padding: .35rem .25rem;
+}
+
+#inquiryModal .close-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: .3rem;
+  height: .3rem;
+  text-align: center;
+  padding-top: .05rem;
+}
+
+#inquiryModal .close-btn .close-ico {
+  width: .14rem;
+  height: 0.14rem;
+  display: inline-block;
+  background: url(https://current-1254038939.cos.ap-guangzhou.myqcloud.com/img/pingmishu-m.png) no-repeat;
+  background-size: 3.525rem auto;
+  background-position: -0.69rem -0.66rem;
+}
+
+#inquiryModal .tel {
+  font-size: .26rem;
+  color: #FFFFFF;
+  letter-spacing: 1px;
+  line-height: .28rem;
+  font-weight: bold;
+}
+
+#inquiryModal .slogan {
+  font-size: .16rem;
+  line-height: .24rem;
+  color: #fff;
+  margin-bottom: .22rem;
+  font-weight: 500;
+}
+
+#inquiryModal .location {
+  margin-bottom: .14rem;
+  display: flex;
+  align-items: center;
+}
+
+#inquiryModal .location img {
+  width: .15rem;
+  height: 0.24rem;
+  margin-right: 5px;
+  background: url(https://current-1254038939.cos.ap-guangzhou.myqcloud.com/img/pingmishu-m.png) no-repeat;
+  background-size: 3.525rem auto;
+  background-position: -0.93rem -0.65rem;
+}
+
+#inquiryModal .location .citySelect {
+  font-size: .16rem;
+  line-height: .16rem;
+  color: #fff;
+}
+
+#inquiryModal .inq-mobile {
+  border: 1px solid #F8F8F8;
+  background-color: #fff;
+  box-shadow: none;
+  outline: none;
+  width: 100%;
+  height: .5rem;
+  line-height: .18rem;
+  color: #333;
+  border-radius: 3px;
+  font-size: .14rem;
+  padding: .15rem;
+  box-sizing: border-box;
+}
+
+#inquiryModal .error-inq {
+  font-size: .12rem;
+  color: #fff;
+  line-height: .24rem;
+  display: none;
+  position: absolute;
+}
+
+#inquiryModal .submit-inq {
+  width: 100%;
+  height: .4rem;
+  background-color: #148b93;
+  color: #fff;
+  font-size: .16rem;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  border-radius: .4rem;
+  margin-top: .34rem;
+}
+
+.mask {
+  height: 100vh;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 98;
+  display: none;
+}
+
+/* 城市选择的page */
+#CitySelector {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  overflow: auto;
+  top: 0;
+  left: 0;
+  transition: all .3s;
+  z-index: 999;
+  display: none;
+}
+
+#CitySelector .container {
+  padding: 0 .2rem;
+}
+
+#CitySelector h1 {
+  height: 0.25rem;
+  font-size: 0.25rem;
+  color: #212022;
+  letter-spacing: 0px;
+  margin-top: .15rem;
+  margin-bottom: 0.08rem;
+  font-weight: 700;
+}
+
+#CitySelector .closeBtn {
+  float: right;
+  width: .2rem;
+  position: relative;
+  z-index: 3;
+}
+
+#CitySelector .words {
+  display: block;
+  font-size: .12rem;
+  color: #212022;
+  letter-spacing: 0;
+  line-height: .12rem;
+  padding-top: 0.25rem;
+}
+
+#CitySelector .input-div,
+#CitySelector .input-div:focus {
+  outline: none;
+  list-style: none;
+  width: 100%;
+  height: 0.46rem;
+  font-size: .14rem;
+  color: #212022;
+  border: none;
+  border-bottom: 1px solid #e3e8ee;
+  border-radius: 0;
+  box-shadow: none;
+  -webkit-appearance: none;
+  padding-top: 0.15rem;
+  padding-bottom: 0.16rem;
+}
+
+#CitySelector .unit {
+  position: absolute;
+  font-size: .14rem;
+  color: #212022;
+  letter-spacing: 0;
+  right: .32rem;
+  top: .51rem;
+  color: #83848e;
+}
+
+#CitySelector .icon-location-pcs {
+  color: #4785f9;
+  margin-right: .06rem;
+}
+
+#CitySelector .city-hots {
+  padding-right: 0.33rem;
+}
+
+#CitySelector [class^="line-"] {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#CitySelector .city-button {
+  height: 0.34rem;
+  width: 0.84rem;
+  font-size: 0.14rem;
+  line-height: 1;
+  padding: 0.09rem 0;
+  text-align: center;
+  border-radius: 2px;
+  border: 1px solid #e3e8ee;
+  margin-top: 0.15rem;
+}
+
+#CitySelector .city-part {
+  margin-top: 0.25rem;
+}
+
+#CitySelector .city-list {
+  font-size: 0.15rem;
+  height: 0.15rem;
+  color: #4785f9;
+}
+
+#CitySelector .city-item {
+  font-size: 0.14rem;
+  height: 0.51rem;
+  padding: 0.18rem 0;
+  border-bottom: 1px solid #e3e8ee;
+  color: #000000;
+  line-height: 1;
+}
+
+#CitySelector .nav-bar {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  visibility: hidden;
+  right: 0.06rem;
+  bottom: 0.63rem;
+}
+
+#CitySelector .nav-bar a {
+  font-size: 0.11rem;
+  color: #b3b5b7;
+  line-height: 0.19rem;
+  text-align: center;
+}
+
+/* 提交成功 */
+.submit-success {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 200;
+}
+
+.submit-success .success-content {
+  text-align: right;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 3rem;
+  height: 2.6rem;
+  margin-top: -1.3rem;
+  margin-left: -1.5rem;
+  background-color: #fff;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.submit-success .success-content p {
+  line-height: 28px;
+  color: #212022;
+  font-size: .2rem;
+  text-align: center;
+  font-weight: 600;
+  margin: 12px 0;
+}
+
+.submit-success .success-content .close {
+  width: .38rem;
+  height: .38rem;
+  cursor: pointer;
+}
+
+.submit-success .content-text {
+  text-align: center;
+  line-height: .25rem;
+  padding: 0 .33rem;
+  color: #9b9b9b;
+  padding-top: 0.2rem;
+}
+
+.submit-success .content-text .success-ico {
+  display: inline-block;
+  width: .56rem;
+  height: .62rem;
+  background: url(https://current-1254038939.cos.ap-guangzhou.myqcloud.com/img/pingmishu-m.png) no-repeat;
+  background-size: 7.05rem auto;
+  background-position: 0 -1.26rem;
+}
+
+.container {
+  padding: 0 0.165rem;
+  margin: 0 auto;
+  width: 100%;
+  padding-bottom: 0.2rem;
+}
+
+.pull-right {
+  float: right;
+}
+
+/* 精选厂商 */
+#awesomeCompany {
+  width: 100%;
+  height: 5.76rem;
+  padding: 0.5rem 0 0.64rem 0.15rem;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+}
+
+.title-english {
+  text-align: center;
+  font-size: 0.1rem;
+  font-family: AppleMyungjo;
+  color: rgba(255, 255, 255, 1);
+  line-height: 0.07rem;
+  margin-bottom: 0.06rem;
+}
+
+.title-chinese {
+  text-align: center;
+  font-size: 0.18rem;
+  font-family: PingFangSC-Medium, PingFang SC;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 1);
+  line-height: 0.18rem;
+}
+
+.swiper-container-company {
+  width: 100%;
+  margin-bottom: 0.4rem;
+  overflow: hidden;
+}
+
+.swiper-container-company .swiper-wrapper .swiper-slide img {
+  width: 100%;
+  display: block;
+}
+
+.swiper-container-company .company-button-prev,
+.swiper-container-company .company-button-next {
+  position: absolute;
+  bottom: 0.64rem;
+  right: 0.15rem;
+  left: auto;
+  top: auto;
+
+  width: .27rem;
+  height: .27rem;
+  background: url(https://current-1254038939.cos.ap-guangzhou.myqcloud.com/img/pingmishu-m.png) no-repeat;
+  background-size: 3.525rem auto;
+  background-position: -0.97rem -0.28rem;
+}
+
+.swiper-container-company .company-button-prev:after,
+.swiper-container-company .company-button-next:after {
+  content: '';
+}
+
+.swiper-container-company .company-button-prev {
+  background-position: -0.62rem -0.28rem;
+  right: .5rem;
+}
+
+.slide-box {
+  position: relative;
+}
